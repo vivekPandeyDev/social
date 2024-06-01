@@ -11,7 +11,9 @@ public class JpaUserDto {
     private String firstName;
     private String lastName;
     private String email;
-    private Role roles;
-    private String imageUrl;
+    private Role role;
+    private String profileUrl;
+    private boolean privateAccount;
+    private String uniqueName;
     private LocalDate createdAt;
 }

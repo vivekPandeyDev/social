@@ -13,7 +13,7 @@
 	<artifactId>user-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>user-service</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Creating User Service for the Spring Boot Application</description>
 	<properties>
 		<spring-cloud.version>2023.0.1</spring-cloud.version>
 		<java.version>17</java.version>

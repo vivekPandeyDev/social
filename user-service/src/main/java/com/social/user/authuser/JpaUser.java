@@ -47,7 +47,7 @@ public class JpaUser implements UserDetails {
     private String firstName;
 
     @Column(nullable = false,unique = true)
-    private String userName;
+    private String uniqueName;
 
     @Column(nullable = false)
     private String password;
@@ -88,7 +88,7 @@ public class JpaUser implements UserDetails {
 
     @Override
     public String getUsername() {
-        return this.email;
+        return this.uniqueName;
     }
 
     @Override
@@ -111,7 +111,7 @@ public class JpaUser implements UserDetails {
         return true;
     }
 
-    public boolean isAccountPrivate(){
+    public boolean checkForPrivateAccount(){
         return privateAccount;
     }
 }

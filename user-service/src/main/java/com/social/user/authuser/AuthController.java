@@ -1,5 +1,6 @@
 package com.social.user.authuser;
 
+import com.social.user.operation.ImageService;
 import com.social.user.response.ApiResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -18,6 +19,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.Map;
+import java.util.Objects;
 
 @RestController
 @RequestMapping("/auth")
@@ -30,8 +32,13 @@ public class AuthController {
 
     private final ResourceLoader resourceLoader;
 
+    private final ImageService imageService;
+
     @Value("${file.upload.location}")
     private String uploadLocation;
+
+    @Value("${base.api.url}")
+    private String baseUrl;
 
     @PostMapping("login")
     @ResponseStatus(HttpStatus.OK)
@@ -39,7 +46,7 @@ public class AuthController {
         final var token = authService.getAuthToken(loginDto);
         final var userDto = authService.getUserByEmail(loginDto.getEmail());
         final var data = Map.of("user", userDto, "access_token", token, "auth_type", "Bearer");
-        return new ApiResponse<>(true, data, "User Registered Successfully!!!!");
+        return new ApiResponse<>(true, data, "User Token Generated Successfully!!!!");
     }
 
     @PostMapping("register")
@@ -47,30 +54,19 @@ public class AuthController {
     public ApiResponse<JpaUserDto> register(
             @Valid @RequestPart("user") RegisterDto registerDto,
             @RequestParam(name = "image", required = false) MultipartFile image) throws IOException {
+        //saving file by user_name
+        if(!Objects.isNull(image)) {
+            String savedImageName = imageService.save(uploadLocation, image, registerDto.getUniqueName());
+            registerDto.setProfileUrl(getProfileUrl(savedImageName));
+        }
         final var userDto = authService.saveUser(registerDto);
-        saveFile(uploadLocation, image, registerDto.getEmail());
+
         return new ApiResponse<>(true, Map.of("user", userDto), "User Registered Successfully!!!!");
     }
 
-    private void saveFile(String uploadDir, MultipartFile file, String fileName) throws IOException {
-        Path path = getFolderPath(uploadDir);
-        String imageName = getImageNameWithExtension(fileName, file);
-        Files.copy(file.getInputStream(), path.resolve(imageName), StandardCopyOption.REPLACE_EXISTING);
+    private String getProfileUrl(String imageName){
+        return String.format("%s/images/users/%s",baseUrl,imageName);
     }
 
-    private String getImageNameWithExtension(String newName, MultipartFile file) {
-        String originalFilename = file.getOriginalFilename();
-        String extension = "";
-        int dotIndex = originalFilename.lastIndexOf('.');
-        if (dotIndex >= 0) {
-            extension = originalFilename.substring(dotIndex - 1);
-        }
-        return newName + extension;
-    }
 
-    private Path getFolderPath(String location) throws IOException {
-        // Resolve the location
-        File directory = resourceLoader.getResource("classpath:images/users").getFile();
-        return Paths.get(directory.getAbsolutePath());
-    }
 }

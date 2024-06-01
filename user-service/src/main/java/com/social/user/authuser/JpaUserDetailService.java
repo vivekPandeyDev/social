@@ -15,8 +15,8 @@ public class JpaUserDetailService implements UserDetailsService {
     private final JpaUserRepository jpaUserRepository;
 
     @Override
-    @Cacheable(value = "jpaUser", key = "#email")
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        return jpaUserRepository.findByEmail(email).orElseThrow(() -> new UsernameNotFoundException("No User found with given email: " + email));
+    @Cacheable(value = "jpaUser", key = "#uniqueName")
+    public UserDetails loadUserByUsername(String uniqueName) throws UsernameNotFoundException {
+        return jpaUserRepository.findByUniqueName(uniqueName).orElseThrow(() -> new UsernameNotFoundException("No User found with given user name: " + uniqueName));
     }
 }

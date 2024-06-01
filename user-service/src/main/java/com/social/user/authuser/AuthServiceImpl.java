@@ -1,5 +1,6 @@
 package com.social.user.authuser;
 
+import com.social.user.exception.NotFoundException;
 import com.social.user.exception.ServiceException;
 import com.social.user.security.JWTGenerator;
 import lombok.RequiredArgsConstructor;
@@ -12,6 +13,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -27,7 +30,7 @@ public class AuthServiceImpl implements AuthService {
     public JpaUserDto saveUser(RegisterDto registerDto) {
         if (
                         Boolean.TRUE.equals(userRepository.existsByEmail(registerDto.getEmail())) ||
-                        Boolean.TRUE.equals(userRepository.existsByUserName(registerDto.getUserName()))
+                        Boolean.TRUE.equals(userRepository.existsByUniqueName(registerDto.getUniqueName()))
         ) {
             log.error("Cannot save user as email or username is already present in database {}",registerDto.getEmail());
             throw new ServiceException("User is already present choose different email or username!", HttpStatus.FOUND,"User Already exists");
@@ -50,8 +53,9 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public String getAuthToken(LoginDto loginDto) {
+        JpaUser savedUser = userRepository.findByEmail(loginDto.getEmail()).orElseThrow(() -> new NotFoundException("No user found with given email: {}" +loginDto.getEmail()));
         Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(loginDto.getEmail(), loginDto.getPassword())
+                new UsernamePasswordAuthenticationToken(savedUser.getUniqueName(), loginDto.getPassword())
         );
         SecurityContextHolder.getContext().setAuthentication(authentication);
         final var token = jwtGenerator.generateToken(authentication);
