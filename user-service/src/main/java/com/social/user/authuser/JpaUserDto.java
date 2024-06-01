@@ -11,6 +11,7 @@ public class JpaUserDto {
     private String firstName;
     private String lastName;
     private String email;
+    private String password;
     private Role role;
     private String profileUrl;
     private boolean privateAccount;
