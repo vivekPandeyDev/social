@@ -5,6 +5,7 @@ import com.social.user.exception.ServiceException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -39,6 +40,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Cacheable(value = "jpaUser", key = "#email")
     public JpaUserDto getUserByEmail(String email) {
         final var jpaUser = userRepository.findByEmail(email).orElseThrow(
                 () -> new ServiceException("No User Found with email: %s".formatted(email),HttpStatus.NOT_FOUND,"No User Found")
@@ -47,6 +49,8 @@ public class UserServiceImpl implements UserService {
         return mapper.map(jpaUser,JpaUserDto.class);
     }
 
+    @Override
+    @Cacheable(value = "jpaUser", key = "#uniqueName")
     public JpaUserDto getUserByUniqueName(String uniqueName) {
         final var jpaUser = userRepository.findByUniqueName(uniqueName).orElseThrow(
                 () -> new ServiceException("No User Found with username: %s".formatted(uniqueName),HttpStatus.NOT_FOUND,"No User Found")
