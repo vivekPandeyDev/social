@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    import: configserver:${SPRING_CLOUD_CONFIG_URI:http://localhost:8083}
+  #       form data enable
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+#      application name
+  application:
+    name: user-service
+#      data source properties
+  datasource:
+    username: root
+    url: jdbc:h2:file:./social2;DB_CLOSE_ON_EXIT=FALSE
+    password: sa

@@ -1,0 +1,35 @@
+# actuator info
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#    caching mechanism
+cache:
+  type: REDIS
+  redis:
+    time-to-live: 6_00_000 # 10 min cache
+    cache-null-values: false
+#        logging setting
+logging:
+  level:
+    web: DEBUG
+    root: INFO
+#        cloud setting
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+#       spring config
+spring:
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  datasource:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'

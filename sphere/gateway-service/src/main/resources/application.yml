@@ -1,0 +1,37 @@
+logging:
+    level:
+        web : DEBUG
+        org.springframework.cloud.gateway: DEBUG
+
+jwt:
+    auth:
+        converter:
+            resource-id: auth-service
+            principle-attribute: preferred_username
+
+server:
+    port: 8080
+
+spring:
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://localhost:9090/realms/social
+                    jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
+    application:
+        name: gateway-service
+    cloud:
+        gateway:
+            routes:
+                - id: USER-SERVICE
+                  uri: lb://USER-SERVICE
+                  predicates:
+                      - Path=/api/users/**
+
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:8761/eureka/
+    instance:
+        prefer-ip-address: true
