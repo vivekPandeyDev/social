@@ -1,11 +1,12 @@
 auth:
   keycloak:
     config:
+      client-id: auth-service
+      default-role: user
       realm: social
       domain: http://localhost:9090
       admin-client-id: admin-auth-service
       admin-client-secret: rS2nm3dOVd4phbcL1Jb1YFMiCSIx6JrZ
-
 server:
   port: 8081
 

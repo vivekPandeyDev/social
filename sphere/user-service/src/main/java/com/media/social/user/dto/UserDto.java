@@ -16,7 +16,7 @@ public class UserDto implements Serializable {
     private static final long serialVersionUID = 92414210438655957L;
     private UUID userId;
     private String firstName;
-    private String uniqueName;
+    private String username;
     private String email;
     private List<Role> roles = new ArrayList<>();
     private List<UUID> followers = new ArrayList<>();
@@ -26,4 +26,6 @@ public class UserDto implements Serializable {
     private String lastName;
     private boolean privateAccount;
     private LocalDate createdAt;
+    private boolean enable;
+    private boolean emailVerified;
 }

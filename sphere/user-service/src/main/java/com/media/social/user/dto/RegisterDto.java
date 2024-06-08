@@ -6,10 +6,7 @@ import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import org.keycloak.representations.idm.UserRepresentation;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -53,7 +50,7 @@ public class RegisterDto {
         userRepresentation.setEmailVerified(this.emailVerified);
         var defaultCredential = Stream.of(new KeyCloakCredentialDto(password).toCredentialRepresentation()).toList();
         userRepresentation.setCredentials(defaultCredential);
-        userRepresentation.setAttributes(Map.of("profileUrl", List.of(this.profileUrl), "bio", List.of(this.bio)));
+        //TODO -> could add attribute like followers following etc
         return userRepresentation;
     }
 }
