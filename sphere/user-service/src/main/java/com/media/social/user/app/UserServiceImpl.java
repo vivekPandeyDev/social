@@ -1,5 +1,6 @@
 package com.media.social.user.app;
 
+import com.media.social.user.dto.Operation;
 import com.media.social.user.dto.RegisterDto;
 import com.media.social.user.dto.UserDto;
 import com.media.social.user.exception.ServiceException;
@@ -9,6 +10,10 @@ import org.modelmapper.ModelMapper;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -21,7 +26,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto saveUser(RegisterDto registerDto) {
-        if (isUserExist(registerDto.getUniqueName(), registerDto.getEmail())) {
+        if (isUserExist(registerDto.getUsername(), registerDto.getEmail())) {
             log.error("Cannot save user as email or username is already present in database {}", registerDto.getEmail());
             throw new ServiceException("User is already present choose different email or username!", HttpStatus.FOUND, "User Already exists");
         }
@@ -32,28 +37,87 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    @Cacheable(value = "user", key = "#email")
-    public UserDto getUserByEmail(String email) {
-        final var savedUser = userRepository.findByEmail(email).orElseThrow(
-                () -> new ServiceException("No User Found with email: %s".formatted(email), HttpStatus.NOT_FOUND, "No User Found")
+    @Cacheable(value = "user", key = "#username")
+    public UserDto getUserByUsername(String username) {
+        final var savedUser = userRepository.findByUsername(username).orElseThrow(
+                () -> new ServiceException("No User Found with username: %s".formatted(username), HttpStatus.NOT_FOUND, "No User Found")
         );
         if (log.isDebugEnabled()) log.debug(USER_DETAIL, savedUser);
         return mapper.map(savedUser, UserDto.class);
     }
 
     @Override
-    @Cacheable(value = "user", key = "#uniqueName")
-    public UserDto getUserByUniqueName(String uniqueName) {
-        final var savedUser = userRepository.findByUniqueName(uniqueName).orElseThrow(
-                () -> new ServiceException("No User Found with username: %s".formatted(uniqueName), HttpStatus.NOT_FOUND, "No User Found")
+    public UserDto getUserByUUID(UUID uuid) {
+        final var savedUser = userRepository.findByUserId(uuid).orElseThrow(
+                () -> new ServiceException("No User Found with user with userId: %s".formatted(uuid), HttpStatus.NOT_FOUND, "No User Found")
         );
         if (log.isDebugEnabled()) log.debug(USER_DETAIL, savedUser);
         return mapper.map(savedUser, UserDto.class);
     }
 
+
     @Override
-    public boolean isUserExist(String uniqueName, String email) {
+    public UserDto updateFollower(UUID currentUserUUIID,UUID followerUUID, Operation operation) {
+        if(currentUserUUIID.equals(followerUUID)){
+            throw  new ServiceException("Cannot add yourself to the followers list");
+        }
+        final var savedUser = userRepository.findByUserId(currentUserUUIID).orElseThrow(
+                () -> new ServiceException("No User Found with user with userId: %s".formatted(currentUserUUIID), HttpStatus.NOT_FOUND, "No User Found")
+        );
+        if(!userRepository.existsById(currentUserUUIID)){
+            throw new ServiceException("No Follower Found with user with userId: %s".formatted(followerUUID), HttpStatus.NOT_FOUND, "No User Found");
+        }
+
+        final var existingFollowers = savedUser.getFollowers();
+
+
+        // Update followers based on the operation
+        if (operation == Operation.ADD) {
+            existingFollowers.add(followerUUID);
+        } else if (operation == Operation.REMOVE) {
+            existingFollowers.remove(followerUUID);
+        }
+
+        savedUser.setFollowers(existingFollowers);
+        userRepository.save(savedUser);
+
+        if (log.isDebugEnabled()) log.debug(USER_DETAIL, savedUser);
+        return mapper.map(savedUser, UserDto.class);
+    }
+
+    @Override
+    @Transactional
+    public UserDto updateFollowing(UUID currentUserUUIID,UUID followingUUID,Operation operation) {
+        if(currentUserUUIID.equals(followingUUID)){
+            throw  new ServiceException("Cannot add yourself to the followings list");
+        }
+        final var savedUser = userRepository.findByUserId(currentUserUUIID).orElseThrow(
+                () -> new ServiceException("No User Found with user with userId: %s".formatted(currentUserUUIID), HttpStatus.NOT_FOUND, "No User Found")
+        );
+
+        if(!userRepository.existsById(currentUserUUIID)){
+            throw new ServiceException("No Following Found with user with userId: %s".formatted(followingUUID), HttpStatus.NOT_FOUND, "No User Found");
+        }
+
+        final var existingFollowings = savedUser.getFollowings();
+
+        // Update followers based on the operation
+        if (operation == Operation.ADD) {
+            existingFollowings.add(followingUUID);
+        } else if (operation == Operation.REMOVE) {
+            existingFollowings.remove(followingUUID);
+        }
+
+        savedUser.setFollowings(existingFollowings);
+        userRepository.save(savedUser);
+
+        if (log.isDebugEnabled()) log.debug(USER_DETAIL, savedUser);
+        return mapper.map(savedUser, UserDto.class);
+    }
+
+    @Override
+    public boolean isUserExist(String username, String email) {
         return Boolean.TRUE.equals(userRepository.existsByEmail(email)) ||
-                Boolean.TRUE.equals(userRepository.existsByUniqueName(uniqueName));
+                Boolean.TRUE.equals(userRepository.existsByUsername(username));
     }
 }

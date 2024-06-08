@@ -19,6 +19,8 @@ public class UserDto implements Serializable {
     private String uniqueName;
     private String email;
     private List<Role> roles = new ArrayList<>();
+    private List<UUID> followers = new ArrayList<>();
+    private List<UUID> followings = new ArrayList<>();
     private String profileUrl;
     private String bio;
     private String lastName;

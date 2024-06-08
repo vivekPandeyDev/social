@@ -25,16 +25,21 @@ public class SecurityConfig {
 
     private static final String[] PUBLIC_URLS = {
             "/api/users/register",
-            "/api/users/token"
+            "/api/auth/token"
     };
+
     @Bean
-        public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
+    public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
         return http
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
                 .authorizeExchange(exchanges ->
                         exchanges
                                 .pathMatchers(PUBLIC_URLS).permitAll()
                                 .anyExchange().authenticated()
+                )
+                .exceptionHandling(handlingSpec ->
+                        handlingSpec
+                                .accessDeniedHandler(new CustomAccessDeniedHandler())
                 )
                 .oauth2ResourceServer(oauth2 ->
                         oauth2.jwt(jwt -> jwt.jwtAuthenticationConverter(jwtAuthConverter))

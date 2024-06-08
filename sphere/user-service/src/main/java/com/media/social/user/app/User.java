@@ -4,12 +4,11 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
 @Table(name = "jpa_user")
@@ -29,13 +28,23 @@ public class User implements Serializable {
     private String firstName;
 
     @Column(nullable = false, unique = true)
-    private String uniqueName;
+    private String username;
 
     @Column(nullable = false, unique = true)
     private String email;
 
     @Enumerated(EnumType.STRING)
     private List<Role> roles = new ArrayList<>();
+
+    @ElementCollection
+    @CollectionTable(name = "user_followers", joinColumns = @JoinColumn(name = "user_id"))
+    @Column(name = "follower")
+    private Set<UUID> followers = new HashSet<>();
+
+    @ElementCollection
+    @CollectionTable(name = "user_followings", joinColumns = @JoinColumn(name = "user_id"))
+    @Column(name = "following")
+    private Set<UUID> followings = new HashSet<>();
 
     // optional user details
     private String profileUrl;
@@ -45,6 +54,10 @@ public class User implements Serializable {
     private String lastName;
 
     private boolean privateAccount = false;
+
+    private boolean emailVerified = false;
+
+    private boolean enable = true;
 
     @Column(updatable = false)
     private LocalDate createdAt;

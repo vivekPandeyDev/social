@@ -5,260 +5,187 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae727fb-ca59-425a-b0fe-94ba84617ba0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/003d0cab2c72116e6dc5ebdc9fa4cee9111f11c9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a8f39dc952763e59b71dc26f2492dcd8f3a2a05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d231581e21d7ebc1cfbd0ee6a1a304bec5f704e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/1/211e927302dec8544ec8670b351aed3b241359b0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/28eaf0e2e83efaf1c35a1ca5c49e4ad120971418" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/c/2c0340cfb77372783bcf97504e46cb48247a7180" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f87c5cb4025e6db2d72556b8b354b7e96254cb4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab5a05c1cb53c3a9839a9bc0e0060e211b7ddd2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fdec652a6bb40c3b700fc1e57af6b273938ad91" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49efa95e858eb14c5f3cbcdb9203226a1ac11f80" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4e2ca9a304684c166e316b31672096358dc95654" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51ca838bbbdeb80454c9a419852e3742770fa3eb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/5814b6c80edf9e975dabfc045a64966500831571" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68da8b2b94a6a886103022eddea056cea5afc2b4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/7576cf9f124e3dc65ca304a9516bad822734c9a3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e695c12a84be5c031aed4ba7580866d6a2de2f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/87c3c8497a4a8d0c9188b6fc9456c8d7333e4b83" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/93ea37893da92bf84759b45cc24ae3d609171c2a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a63ce24d7e94583277c008fc522495e4225eca33" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/ab07cf8ecc7e0f69070db192602d1eedd342d0e5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b54771e84d7835e7a7e932db2d453956da0cc339" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/be3f170e834a82b7d16f0f7f5242b15ae423a3fd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3a1fe00075f95e4d2af318d4222b025d2da5e90" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c43976a40291915e11fbffdd3439b4ad2e160f62" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d24cd625f260b4e3372769c9086878129fc786b7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d517f5821f056a568b24322d77c998120aeb11ad" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5c675cf6282f7983ead4c15d1d8376c267eab78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6bb897eaec88600e35312ec8f5d034bf8ff4daf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9edb615a0cf63869b66817ab69c5e08a1854ed0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/0/003d0cab2c72116e6dc5ebdc9fa4cee9111f11c9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/a/1a8f39dc952763e59b71dc26f2492dcd8f3a2a05" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/d/1d231581e21d7ebc1cfbd0ee6a1a304bec5f704e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/1/211e927302dec8544ec8670b351aed3b241359b0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/8/28eaf0e2e83efaf1c35a1ca5c49e4ad120971418" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/c/2c0340cfb77372783bcf97504e46cb48247a7180" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/f/2f87c5cb4025e6db2d72556b8b354b7e96254cb4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/a/3ab5a05c1cb53c3a9839a9bc0e0060e211b7ddd2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/f/3fdec652a6bb40c3b700fc1e57af6b273938ad91" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/9/49efa95e858eb14c5f3cbcdb9203226a1ac11f80" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/e/4e2ca9a304684c166e316b31672096358dc95654" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/1/51ca838bbbdeb80454c9a419852e3742770fa3eb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/8/5814b6c80edf9e975dabfc045a64966500831571" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/8/68da8b2b94a6a886103022eddea056cea5afc2b4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/5/7576cf9f124e3dc65ca304a9516bad822734c9a3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/5/75e695c12a84be5c031aed4ba7580866d6a2de2f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/7/87c3c8497a4a8d0c9188b6fc9456c8d7333e4b83" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/3/93ea37893da92bf84759b45cc24ae3d609171c2a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/6/a63ce24d7e94583277c008fc522495e4225eca33" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/b/ab07cf8ecc7e0f69070db192602d1eedd342d0e5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/5/b54771e84d7835e7a7e932db2d453956da0cc339" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/e/be3f170e834a82b7d16f0f7f5242b15ae423a3fd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/3/c3a1fe00075f95e4d2af318d4222b025d2da5e90" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/4/c43976a40291915e11fbffdd3439b4ad2e160f62" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/2/d24cd625f260b4e3372769c9086878129fc786b7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/5/d517f5821f056a568b24322d77c998120aeb11ad" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/5/e5c675cf6282f7983ead4c15d1d8376c267eab78" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/6/e6bb897eaec88600e35312ec8f5d034bf8ff4daf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/9/e9edb615a0cf63869b66817ab69c5e08a1854ed0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin-auth-service.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/auth-service.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/controller/GlobalExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/controller/RestClientException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/controller/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/controller/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/domain/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/domain/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/response/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/response/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/CustomAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/CustomAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/KeyCloakCredentialDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/KeyCloakUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/UpdateUserFriendRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/validator/EnumValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/validator/ValidEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/2/021dfa79e49c9cca1d6c98014d4b70620dac18da" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0e64407a50427b79bb3b9f33814d132979c65d0a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13028fe3713c5b5e74696b3758dfc96a1c264a8b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/151d6232340df325cb4f43933b8e49afcd741cec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19dca551e79f4b6a478fc0de967e99a3e6126960" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c2e83d9cfdaf9f26b471118d0c84e7691c942aa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1ea5ef8f3228a7c2c2e3c693bb50b4fa19f71014" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/27aef6386af2a22a4fe217ad553363e07e481076" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b004c04788c6d99811651677f8f15753aca4294" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b3d52cd4ec46fdf0fec1ecd0dc316fb4edf2983" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2eef83fd4d60545089dde290fee786e4b633a15c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35729592cb0c9e172f173ecbf1e465222af64627" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36665bd0edd3806c44fc6a93d402850e859f4060" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/380795b759e165db3df633f2953b1172e1590be4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43522185bb3a5b4627b6e4e1ca3227fe4f330b0a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/46a1fb1fb1be3a063d54a091f2422e1147bdfd19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4cfffc5ee31d913c85cf22f3558efb9aa3bac6e4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/e/4e13853b10c83fa10d0a5fb04eac19c626dae6eb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f4204ca17b224b8086699357b7bb5e94ef8f5c0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4ff77b605a389514ecd7e8e6ceeced3da4d63b08" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/3/533d1c75228749c6585513ba328b62876f622f55" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5bef004ac56e6563b70059cbb79e3ff5fd539b4c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5cb1fd061fc998e00afeee841976ced0051f8326" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5f9f347d517b8685d7c23df5ad8116e84041c895" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/615dda1af9944dc8423b60be321455f5a0f9d07f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/3/63b5d1e5032c964d1e31ad059e68125e4feb533a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/655c889db9a97810bd43ee353f431e79684295e2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/6659485ff5938e786d2a3d656ca88c3469d796c0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6af3bc69d85bc5e5d75fcecd616e1622ad3274b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/e/6ed763ecfb7019c6fbcb0a0cb58e587e6c6eb20c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d859cdb55bc104540a61f5032cf2b22fedb20a9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/87c5571be0e2f06fb934a6af0a6099469495552f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8c6bf3a15e20d929b3387f419cfcb92da546611b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91dc7d6771d422dc9c4888232bf68ea7bd60649a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b04f1190597f8bbc1ddd5b06051196752721149" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/aec1c057597fc6152c6890522caaff79d94da4b1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b00dc2f52dfd12e2e1ab8e24714ab5d1bb919e24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b4ec9bdb00f51a4a38ad64b596a260d67285fbf6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/a/ca571490935ac0d2b516e6d51d7fd973698c0262" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/e/ce99af58f5a38ec11dc165803a7909a055acac18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/0/d0851c835d3f264bb6fcf79cac0898e3afe9e985" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d246028dcd59cee4bb4d519cf2a547279ebb2a11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2f5d1978e5f519100a679c4109f89296278badc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d3fdf696b6f480fb9f0f496542e2d8cbbf859f92" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dcc4194f5fcb12682655508d829e052cacf4b68b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/1/e116df2b337cd96c0410a7c92b70fc57a36ae536" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2e18fde63d5b2a6c6760c8be55d8816f6304158" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e395b906f50ef08df672e2811d7a029c66ccec2f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e434eb9800d8ee0ab8b1ce1fb47010ce44507ef6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8849ffb83fa8eaad63d4737ea8ceb384e9bca41" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed19489143f0b6280badb57892fe2319ea860352" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee0bba3864c4779fcb56d41767a6fa4a50cb25c1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/4/f43d01f86e5d5b5d7f0de069b08028eaec0c4840" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/2/021dfa79e49c9cca1d6c98014d4b70620dac18da" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/e/0e64407a50427b79bb3b9f33814d132979c65d0a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/3/13028fe3713c5b5e74696b3758dfc96a1c264a8b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/5/151d6232340df325cb4f43933b8e49afcd741cec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/9/19dca551e79f4b6a478fc0de967e99a3e6126960" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/c/1c2e83d9cfdaf9f26b471118d0c84e7691c942aa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/e/1ea5ef8f3228a7c2c2e3c693bb50b4fa19f71014" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/7/27aef6386af2a22a4fe217ad553363e07e481076" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/b/2b004c04788c6d99811651677f8f15753aca4294" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/b/2b3d52cd4ec46fdf0fec1ecd0dc316fb4edf2983" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/2/e/2eef83fd4d60545089dde290fee786e4b633a15c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/5/35729592cb0c9e172f173ecbf1e465222af64627" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/6/36665bd0edd3806c44fc6a93d402850e859f4060" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/8/380795b759e165db3df633f2953b1172e1590be4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/3/43522185bb3a5b4627b6e4e1ca3227fe4f330b0a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/6/46a1fb1fb1be3a063d54a091f2422e1147bdfd19" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/c/4cfffc5ee31d913c85cf22f3558efb9aa3bac6e4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/e/4e13853b10c83fa10d0a5fb04eac19c626dae6eb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/f/4f4204ca17b224b8086699357b7bb5e94ef8f5c0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/f/4ff77b605a389514ecd7e8e6ceeced3da4d63b08" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/3/533d1c75228749c6585513ba328b62876f622f55" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/b/5bef004ac56e6563b70059cbb79e3ff5fd539b4c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/c/5cb1fd061fc998e00afeee841976ced0051f8326" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/f/5f9f347d517b8685d7c23df5ad8116e84041c895" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/1/615dda1af9944dc8423b60be321455f5a0f9d07f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/3/63b5d1e5032c964d1e31ad059e68125e4feb533a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/5/655c889db9a97810bd43ee353f431e79684295e2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/6/6659485ff5938e786d2a3d656ca88c3469d796c0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/a/6af3bc69d85bc5e5d75fcecd616e1622ad3274b7" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/e/6ed763ecfb7019c6fbcb0a0cb58e587e6c6eb20c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/d/7d859cdb55bc104540a61f5032cf2b22fedb20a9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/7/87c5571be0e2f06fb934a6af0a6099469495552f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/c/8c6bf3a15e20d929b3387f419cfcb92da546611b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/1/91dc7d6771d422dc9c4888232bf68ea7bd60649a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/b/9b04f1190597f8bbc1ddd5b06051196752721149" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/e/aec1c057597fc6152c6890522caaff79d94da4b1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/0/b00dc2f52dfd12e2e1ab8e24714ab5d1bb919e24" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/4/b4ec9bdb00f51a4a38ad64b596a260d67285fbf6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/a/ca571490935ac0d2b516e6d51d7fd973698c0262" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/e/ce99af58f5a38ec11dc165803a7909a055acac18" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/0/d0851c835d3f264bb6fcf79cac0898e3afe9e985" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/2/d246028dcd59cee4bb4d519cf2a547279ebb2a11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/2/d2f5d1978e5f519100a679c4109f89296278badc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/3/d3fdf696b6f480fb9f0f496542e2d8cbbf859f92" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/c/dcc4194f5fcb12682655508d829e052cacf4b68b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/1/e116df2b337cd96c0410a7c92b70fc57a36ae536" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/2/e2e18fde63d5b2a6c6760c8be55d8816f6304158" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/3/e395b906f50ef08df672e2811d7a029c66ccec2f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/4/e434eb9800d8ee0ab8b1ce1fb47010ce44507ef6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/8/e8849ffb83fa8eaad63d4737ea8ceb384e9bca41" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/d/ed19489143f0b6280badb57892fe2319ea860352" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/e/ee0bba3864c4779fcb56d41767a6fa4a50cb25c1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/4/f43d01f86e5d5b5d7f0de069b08028eaec0c4840" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/social/gateway/GatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/social/gateway/filter/AuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/social/gateway/filter/RouteValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/test/java/com/social/gateway/GatewayApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/users/readme.txt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/users/vivek_pand.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/auth-service.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/src/main/java/com/alibou/keycloak/DemoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/src/main/java/com/alibou/keycloak/JwtAuthConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/src/main/java/com/alibou/keycloak/KeycloakApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/src/main/java/com/alibou/keycloak/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak/src/test/java/com/alibou/keycloak/KeycloakApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/src/main/java/com/social/registry/RegistryApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/registry-service/src/test/java/com/social/registry/RegistryApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/SecurityServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/config/WebConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/controller/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/controller/FetchAuthenticationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/controller/JpaUserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/controller/LoginDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/controller/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/exception/GlobalExceptionAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/exception/ServiceException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/response/ApiError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/response/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/security/CsrfController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/security/JWTAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/security/JWTGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/security/JwtAuthEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/security/RestClientUserDetailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/security/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/security/SecurityConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/java/com/social/authentication/util/RequestUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security-service/src/test/java/com/social/security_service/SecurityServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/social/keycloak/security/SecurityApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/social/keycloak/security/config/WebSecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/social/keycloak/security/exception/CustomAccessDenied.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/social/keycloak/security/service/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/social/keycloak/security/service/CustomAuthenticationEntryPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/java/com/social/keycloak/security/service/KeycloakJwtRolesConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/security/src/test/java/com/social/keycloak/security/SecurityApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/social.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/social.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/social.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/UserServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/authuser/JpaUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/authuser/JpaUserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/authuser/JpaUserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/authuser/LoginDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/authuser/RegisterDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/authuser/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/authuser/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/authuser/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/authuser/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/config/FileUploadProperties.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/exception/GlobalExceptionAdvice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/exception/ServiceException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/file/FileService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/file/ImageService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/response/ApiError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/response/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/social/user/webconfig/WebConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/social/user/UserServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/social2.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/controller/TokenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/RegisterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/RegisterDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/webconfig/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/webconfig/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vivekPandeyDev&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b94739af-efe3-4b8b-8c55-3be378c981db" />
+        <option name="url" value="git@github.com:vivekPandeyDev/social.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2hXjF384taj9aEvvBaAj5P9gscq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.ConfigurationService.executor": "Run",
-    "Application.GatewayApplication.executor": "Run",
+    "Application.GatewayApplication.executor": "Debug",
     "Application.RegistryApplication.executor": "Run",
-    "Application.UserServiceApplication.executor": "Run",
+    "Application.UserServiceApplication.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last.edited.regexp": "",
+    "last_opened_file_path": "D:/social/sphere/gateway-service/src/main/java/com/media/social/gateway",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\social\sphere\gateway-service\src\main\java\com\media\social\gateway" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.media.social.gateway.controller" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.UserServiceApplication">
     <configuration name="ConfigurationService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.media.social.config.ConfigurationService" />
@@ -338,5 +265,29 @@
       <updated>1717747212175</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserController.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/controller/TokenController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

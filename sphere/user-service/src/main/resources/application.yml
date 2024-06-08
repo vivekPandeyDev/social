@@ -1,9 +1,15 @@
+auth:
+  keycloak:
+    config:
+      realm: social
+      domain: http://localhost:9090
+      admin-client-id: admin-auth-service
+      admin-client-secret: rS2nm3dOVd4phbcL1Jb1YFMiCSIx6JrZ
+
 server:
   port: 8081
 
 spring:
-  config:
-    import: configserver:${SPRING_CLOUD_CONFIG_URI:http://localhost:8083}
   #       form data enable
   servlet:
     multipart:
@@ -13,7 +19,11 @@ spring:
   application:
     name: user-service
 #      data source properties
+
   datasource:
     username: root
-    url: jdbc:h2:file:./social2;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:file:./social;DB_CLOSE_ON_EXIT=FALSE
     password: sa
+#    update config at last
+  config:
+    import: configserver:${SPRING_CLOUD_CONFIG_URI:http://localhost:8083}
