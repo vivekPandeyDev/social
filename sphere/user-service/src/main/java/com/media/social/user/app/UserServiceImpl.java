@@ -22,6 +22,8 @@ public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
     private final ModelMapper mapper;
+    private final KeyCloakService keyCloakService;
+
     private static final String USER_DETAIL = "user details -> {}";
 
     @Override
@@ -30,7 +32,13 @@ public class UserServiceImpl implements UserService {
             log.error("Cannot save user as email or username is already present in database {}", registerDto.getEmail());
             throw new ServiceException("User is already present choose different email or username!", HttpStatus.FOUND, "User Already exists");
         }
+        var userId = keyCloakService.createUser(registerDto);
+        var defaultRole = keyCloakService.getKeycloakDefaultRoles();
+
         User user = mapper.map(registerDto, User.class);
+        user.setUserId(userId);
+        user.setRoles(Collections.singletonList(defaultRole.getName()));
+
         if (log.isDebugEnabled()) log.debug(USER_DETAIL, user);
         final var savedUser = userRepository.save(user);
         return mapper.map(savedUser, UserDto.class);

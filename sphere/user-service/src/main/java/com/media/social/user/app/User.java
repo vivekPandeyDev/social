@@ -1,9 +1,11 @@
 package com.media.social.user.app;
 
+import com.media.social.user.dto.UserDto;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.modelmapper.ModelMapper;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -21,7 +23,6 @@ public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
     private UUID userId;
 
     @Column(nullable = false)
@@ -33,8 +34,10 @@ public class User implements Serializable {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Enumerated(EnumType.STRING)
-    private List<Role> roles = new ArrayList<>();
+    @ElementCollection
+    @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
+    @Column(name = "role")
+    private List<String> roles = new ArrayList<>();
 
     @ElementCollection
     @CollectionTable(name = "user_followers", joinColumns = @JoinColumn(name = "user_id"))
@@ -69,5 +72,9 @@ public class User implements Serializable {
     }
     public boolean checkForPrivateAccount() {
         return privateAccount;
+    }
+
+    public UserDto toUserDto(ModelMapper mapper){
+        return mapper.map(this,UserDto.class);
     }
 }

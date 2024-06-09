@@ -60,9 +60,6 @@ public class UserController {
             String savedImageName = imageService.save(uploadLocation, image, registerDto.getUsername());
             registerDto.setProfileUrl(getProfileUrl(savedImageName));
         }
-        // creating keycloak user
-        keyCloakService.createUser(registerDto);
-
         final var userDto = userService.saveUser(registerDto);
 
         return new ApiResponse<>(true, Map.of("user", userDto), "User Registered Successfully!!!!");

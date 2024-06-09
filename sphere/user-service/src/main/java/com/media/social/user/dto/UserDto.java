@@ -1,6 +1,5 @@
 package com.media.social.user.dto;
 
-import com.media.social.user.app.Role;
 import lombok.Data;
 
 import java.io.Serial;
@@ -18,7 +17,7 @@ public class UserDto implements Serializable {
     private String firstName;
     private String username;
     private String email;
-    private List<Role> roles = new ArrayList<>();
+    private List<String> roles = new ArrayList<>();
     private List<UUID> followers = new ArrayList<>();
     private List<UUID> followings = new ArrayList<>();
     private String profileUrl;

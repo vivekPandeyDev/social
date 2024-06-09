@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae727fb-ca59-425a-b0fe-94ba84617ba0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f87c5cb4025e6db2d72556b8b354b7e96254cb4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/f/2f87c5cb4025e6db2d72556b8b354b7e96254cb4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/users/vishal_pandey.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab5a05c1cb53c3a9839a9bc0e0060e211b7ddd2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab5a05c1cb53c3a9839a9bc0e0060e211b7ddd2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fdec652a6bb40c3b700fc1e57af6b273938ad91" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fdec652a6bb40c3b700fc1e57af6b273938ad91" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e695c12a84be5c031aed4ba7580866d6a2de2f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e695c12a84be5c031aed4ba7580866d6a2de2f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a63ce24d7e94583277c008fc522495e4225eca33" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a63ce24d7e94583277c008fc522495e4225eca33" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7bee192adb11e64c76198fc87d3d1a93012bb2d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7bee192adb11e64c76198fc87d3d1a93012bb2d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/social.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/social.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sphere/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/RegisterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/RegisterDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/UserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/resources/application.yml" afterDir="false" />
@@ -70,7 +76,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.ConfigurationService.executor": "Run",
-    "Application.GatewayApplication.executor": "Debug",
+    "Application.GatewayApplication.executor": "Run",
     "Application.RegistryApplication.executor": "Run",
     "Application.UserServiceApplication.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -148,6 +154,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in user-service" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <envs>
+        <env name="spring.jpa.hibernate.ddl-auto" value="create" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserServiceApplication" />
@@ -183,13 +202,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserController.java</url>
-          <line>94</line>
+          <line>91</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/controller/TokenController.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/JwtAuthConverter.java</url>
@@ -197,9 +211,9 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="20" />
+          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserServiceImpl.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

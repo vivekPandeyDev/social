@@ -20,7 +20,6 @@ spring:
   application:
     name: user-service
 #      data source properties
-
   datasource:
     username: root
     url: jdbc:h2:file:./social;DB_CLOSE_ON_EXIT=FALSE
@@ -28,3 +27,6 @@ spring:
 #    update config at last
   config:
     import: configserver:${SPRING_CLOUD_CONFIG_URI:http://localhost:8083}
+  jpa:
+    hibernate:
+      ddl-auto: create

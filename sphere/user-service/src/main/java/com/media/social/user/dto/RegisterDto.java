@@ -1,10 +1,12 @@
 package com.media.social.user.dto;
 
+import com.media.social.user.app.User;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import org.keycloak.representations.idm.UserRepresentation;
+import org.modelmapper.ModelMapper;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -40,7 +42,7 @@ public class RegisterDto {
     private String bio;
 
 
-    public UserRepresentation toUserRepresentation(String password) {
+    public UserRepresentation toUserRepresentation() {
         UserRepresentation userRepresentation = new UserRepresentation();
         userRepresentation.setUsername(this.username);
         userRepresentation.setFirstName(this.firstName);
@@ -48,9 +50,20 @@ public class RegisterDto {
         userRepresentation.setEmail(this.email);
         userRepresentation.setEnabled(this.enable);
         userRepresentation.setEmailVerified(this.emailVerified);
-        var defaultCredential = Stream.of(new KeyCloakCredentialDto(password).toCredentialRepresentation()).toList();
+        var defaultCredential = Stream.of(new KeyCloakCredentialDto(this.password).toCredentialRepresentation()).toList();
         userRepresentation.setCredentials(defaultCredential);
-        //TODO -> could add attribute like followers following etc
+
+        Map<String, List<String>> attributes = new HashMap<>();
+        if (this.profileUrl != null) {
+            attributes.put("profileUrl", Collections.singletonList(this.profileUrl));
+        }
+        if (this.bio != null) {
+            attributes.put("bio", Collections.singletonList(this.bio));
+        }
+        userRepresentation.setAttributes(attributes);
         return userRepresentation;
     }
+
+
+
 }
