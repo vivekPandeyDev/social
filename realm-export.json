@@ -1,6 +1,6 @@
 {
   "id": "cfc776eb-76db-48ca-a0ed-f33ba2248da7",
-  "realm": "socialSphere",
+  "realm": "social",
   "displayName": "",
   "displayNameHtml": "",
   "notBefore": 0,
@@ -67,6 +67,9 @@
             "uma_authorization"
           ],
           "client": {
+            "auth-service": [
+              "user"
+            ],
             "account": [
               "view-profile",
               "manage-account"
@@ -536,13 +539,13 @@
       "clientId": "account",
       "name": "${client_account}",
       "rootUrl": "${authBaseUrl}",
-      "baseUrl": "/realms/socialSphere/account/",
+      "baseUrl": "/realms/social/account/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/realms/socialSphere/account/*"
+        "/realms/social/account/*"
       ],
       "webOrigins": [],
       "notBefore": 0,
@@ -1050,13 +1053,13 @@
       "clientId": "security-admin-console",
       "name": "${client_security-admin-console}",
       "rootUrl": "${authAdminUrl}",
-      "baseUrl": "/admin/socialSphere/console/",
+      "baseUrl": "/admin/social/console/",
       "surrogateAuthRequired": false,
       "enabled": true,
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "/admin/socialSphere/console/*"
+        "/admin/social/console/*"
       ],
       "webOrigins": [
         "+"
@@ -1649,22 +1652,31 @@
   "enabledEventTypes": [],
   "adminEventsEnabled": false,
   "adminEventsDetailsEnabled": false,
-  "identityProviders": [],
+  "identityProviders": [
+    {
+      "alias": "google",
+      "internalId": "0e1c429e-dc6f-4f09-97c5-04180008fa15",
+      "providerId": "google",
+      "enabled": true,
+      "updateProfileFirstLoginMode": "on",
+      "trustEmail": false,
+      "storeToken": false,
+      "addReadTokenRoleOnCreate": false,
+      "authenticateByDefault": false,
+      "linkOnly": false,
+      "firstBrokerLoginFlowAlias": "first broker login",
+      "config": {
+        "offlineAccess": "true",
+        "userIp": "false",
+        "clientSecret": "**********",
+        "clientId": "244367111810-k1837670oktdu58fbrbijv8f2b0esk2k.apps.googleusercontent.com",
+        "guiOrder": "1"
+      }
+    }
+  ],
   "identityProviderMappers": [],
   "components": {
     "org.keycloak.services.clientregistration.policy.ClientRegistrationPolicy": [
-      {
-        "id": "d6bdf29d-80dc-446c-86bd-a07f92918501",
-        "name": "Allowed Client Scopes",
-        "providerId": "allowed-client-templates",
-        "subType": "authenticated",
-        "subComponents": {},
-        "config": {
-          "allow-default-scopes": [
-            "true"
-          ]
-        }
-      },
       {
         "id": "55cc1fcc-d3aa-4b14-923e-a291079a4424",
         "name": "Allowed Protocol Mapper Types",
@@ -1757,14 +1769,18 @@
             "oidc-full-name-mapper"
           ]
         }
-      }
-    ],
-    "org.keycloak.userprofile.UserProfileProvider": [
+      },
       {
-        "id": "29597753-e3ef-4bb5-9285-152bbc122824",
-        "providerId": "declarative-user-profile",
+        "id": "d6bdf29d-80dc-446c-86bd-a07f92918501",
+        "name": "Allowed Client Scopes",
+        "providerId": "allowed-client-templates",
+        "subType": "authenticated",
         "subComponents": {},
-        "config": {}
+        "config": {
+          "allow-default-scopes": [
+            "true"
+          ]
+        }
       }
     ],
     "org.keycloak.keys.KeyProvider": [
