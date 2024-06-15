@@ -46,21 +46,14 @@ public class KeyCloakService {
                 if (users.isEmpty()) {
                     throw new ServiceException("user cannot be find by given username: " + registerDto.getUsername());
                 }
-                var userId = UUID.fromString(users.get(0).getId());
-                //adding default roles
-                addDefaultRoles(userId);
-                return userId;
+
+
+                return UUID.fromString(users.get(0).getId());
             }
 
         }
 
     }
-
-    private void addDefaultRoles(UUID userId) {
-        addRoles(userId, defaultRoleName);
-    }
-
-
     public UserRepresentation getKeycloakUser(String username) {
         var users = realmResource.users().search(username);
         if (users.isEmpty()) {

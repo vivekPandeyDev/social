@@ -71,3 +71,7 @@ Psphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.jav
 Psphere/user-service/src/main/java/com/media/social/user/dto/KeyCloakUserDto.java,3\7\3758c7f279782029bca3fc45c0b6bbda27eabff0
 †
 Vsphere/user-service/src/main/java/com/media/social/user/dto/KeyCloakCredentialDto.java,b\a\ba62ab142edac8d4804a5b127fb797ef531bc821
+?
+application.yml,1\1\1116e8e6e492a185f4df7f55ff557cb2e5ac869a
+>
+sphere/pom.xml,a\9\a9a65d2c4f05222a7e8dd5f21937db8b026c2124
