@@ -7,7 +7,7 @@ import com.media.social.user.dto.UserDto;
 import java.util.UUID;
 
 public interface UserService {
-
+    UUID getUUIDFromUniqueName(String uniqueName);
     UserDto saveUser(RegisterDto registerDto);
     UserDto getUserByUsername(String username);
 

@@ -11,7 +11,6 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -34,16 +33,9 @@ public class UserController {
 
     private final UserService userService;
 
-    private final ResourceLoader resourceLoader;
-
     private final ImageService imageService;
 
     private final FileService fileService;
-
-    private final UserUtility userUtility;
-
-    private final KeyCloakService keyCloakService;
-
     @Value("${file.upload.location}")
     private String uploadLocation;
 
@@ -65,6 +57,32 @@ public class UserController {
         return new ApiResponse<>(true, Map.of("user", userDto), "User Registered Successfully!!!!");
     }
 
+    @PostMapping("/followers")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public ApiResponse<UserDto> updateFollowers(@Valid @RequestBody UpdateUserFriendRequest request){
+        var friendUserId  = request.getFriendUserId();
+        var loggedInUserUIID = request.getUserId();
+        var operation = Operation.valueOf(request.getOperation());
+        var savedUserDto = switch (operation){
+            case REMOVE -> userService.updateFollower(loggedInUserUIID,friendUserId,REMOVE);
+            case ADD -> userService.updateFollower(loggedInUserUIID,friendUserId,ADD);
+        };
+        return new ApiResponse<>(true, Map.of("user", savedUserDto), "User Detail Updated Successfully!!!!");
+    }
+
+    @PostMapping("/followings")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public ApiResponse<UserDto> updateFollowings(@Valid @RequestBody UpdateUserFriendRequest request){
+        var friendUserId  = request.getFriendUserId();
+        var loggedInUserUIID = request.getUserId();
+        var operation = Operation.valueOf(request.getOperation());
+        var savedUserDto = switch (operation){
+            case REMOVE -> userService.updateFollowing(loggedInUserUIID,friendUserId,REMOVE);
+            case ADD -> userService.updateFollowing(loggedInUserUIID,friendUserId,ADD);
+        };
+        return new ApiResponse<>(true, Map.of("user", savedUserDto), "User Detail Updated Successfully!!!!");
+    }
+
 
     @GetMapping("name/{uniqueName}")
     public ApiResponse<UserDto> getUserDetailByUniqueName(@PathVariable("uniqueName") String uniqueName){
@@ -76,40 +94,6 @@ public class UserController {
     public ApiResponse<UserDto> getUserDetailByUUID(@PathVariable("userId") UUID userId){
         var savedUserDto = userService.getUserByUUID(userId);
         return new ApiResponse<>(true, Map.of("user", savedUserDto), "User Detail Fetched Successfully!!!!");
-    }
-
-
-    @GetMapping("/me")
-    public ApiResponse<UserDto> getByUserInfo(){
-        String uniqueName = userUtility.getUserNameFromToken("my-test-token");
-        var savedUserDto = userService.getUserByUsername(uniqueName);
-        return new ApiResponse<>(true, Map.of("user", savedUserDto), "User Detail Fetched Successfully!!!!");
-    }
-
-    @PostMapping("/followers")
-    @ResponseStatus(HttpStatus.ACCEPTED)
-    public ApiResponse<UserDto> updateFollowers(@Valid @RequestBody UpdateUserFriendRequest request){
-        var uniqueName = userUtility.getUserNameFromToken("my-test-token");
-        var loggedInUserUIID = userUtility.getUUIDFromUniqueName(uniqueName);
-        var operation = Operation.valueOf(request.getOperation());
-        var savedUserDto = switch (operation){
-            case REMOVE -> userService.updateFollower(loggedInUserUIID,request.getFriendUserId(),REMOVE);
-            case ADD -> userService.updateFollower(loggedInUserUIID,request.getFriendUserId(),ADD);
-        };
-        return new ApiResponse<>(true, Map.of("user", savedUserDto), "User Detail Updated Successfully!!!!");
-    }
-
-    @PostMapping("/followings")
-    @ResponseStatus(HttpStatus.ACCEPTED)
-    public ApiResponse<UserDto> updateFollowings(@Valid @RequestBody UpdateUserFriendRequest request){
-        var uniqueName = userUtility.getUserNameFromToken("my-test-token");
-        var loggedInUserUIID = userUtility.getUUIDFromUniqueName(uniqueName);
-        var operation = Operation.valueOf(request.getOperation());
-        var savedUserDto = switch (operation){
-            case REMOVE -> userService.updateFollowing(loggedInUserUIID,request.getFriendUserId(),REMOVE);
-            case ADD -> userService.updateFollowing(loggedInUserUIID,request.getFriendUserId(),ADD);
-        };
-        return new ApiResponse<>(true, Map.of("user", savedUserDto), "User Detail Updated Successfully!!!!");
     }
 
     @GetMapping(value = "/images/{uniqueName}",produces = MediaType.IMAGE_JPEG_VALUE)

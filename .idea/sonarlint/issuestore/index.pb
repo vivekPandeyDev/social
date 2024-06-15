@@ -75,3 +75,7 @@ Vsphere/user-service/src/main/java/com/media/social/user/dto/KeyCloakCredentialD
 application.yml,1\1\1116e8e6e492a185f4df7f55ff557cb2e5ac869a
 >
 sphere/pom.xml,a\9\a9a65d2c4f05222a7e8dd5f21937db8b026c2124
+‹
+[sphere/user-service/src/main/java/com/media/social/user/webconfig/FileUploadProperties.java,1\7\174ad73e15786309cbdf34c9791554656090778b
+„
+Tsphere/user-service/src/main/java/com/media/social/user/app/KeyCloakServiceImpl.java,c\d\cd87751084613367a7c9db94a2b92ad01d8ecd09

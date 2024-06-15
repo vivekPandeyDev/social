@@ -13,7 +13,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -25,6 +24,11 @@ public class UserServiceImpl implements UserService {
     private final KeyCloakService keyCloakService;
 
     private static final String USER_DETAIL = "user details -> {}";
+
+    @Override
+    public UUID getUUIDFromUniqueName(String uniqueName){
+        return getUserByUsername(uniqueName).getUserId();
+    }
 
     @Override
     public UserDto saveUser(RegisterDto registerDto) {

@@ -16,4 +16,7 @@ public class UpdateUserFriendRequest {
     @NotBlank(message = "friend's user id cannot be blank")
     private UUID friendUserId;
 
+    @NotBlank(message = "user's  id cannot be blank")
+    private UUID userId;
+
 }

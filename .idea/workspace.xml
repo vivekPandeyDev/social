@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae727fb-ca59-425a-b0fe-94ba84617ba0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/export/admin-auth-service.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/export/master-realm.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/export/master-users-0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/export/social-realm.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/export/social-users-0.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/users/vivek_pandeya.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/users/vivek_pandeyb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/users/vivek_pandeyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/users/vivek_pandeyio.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/users/vivek_pandeyios.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab5a05c1cb53c3a9839a9bc0e0060e211b7ddd2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab5a05c1cb53c3a9839a9bc0e0060e211b7ddd2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fdec652a6bb40c3b700fc1e57af6b273938ad91" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/f/3fdec652a6bb40c3b700fc1e57af6b273938ad91" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51ca838bbbdeb80454c9a419852e3742770fa3eb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51ca838bbbdeb80454c9a419852e3742770fa3eb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/7576cf9f124e3dc65ca304a9516bad822734c9a3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/7576cf9f124e3dc65ca304a9516bad822734c9a3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e695c12a84be5c031aed4ba7580866d6a2de2f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e695c12a84be5c031aed4ba7580866d6a2de2f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5c675cf6282f7983ead4c15d1d8376c267eab78" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5c675cf6282f7983ead4c15d1d8376c267eab78" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -25,8 +24,14 @@
       <change beforePath="$PROJECT_DIR$/oauth-client.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/realm-export.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/social.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/social.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sphere/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/UserServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/UpdateUserFriendRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/UpdateUserFriendRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,8 +181,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.UserServiceApplication" />
-        <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.ConfigurationService" />
+        <item itemvalue="Application.GatewayApplication" />
         <item itemvalue="Application.RegistryApplication" />
       </list>
     </recent_temporary>
@@ -207,24 +212,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserController.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/JwtAuthConverter.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java</url>
+          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakServiceImpl.java</url>
           <line>37</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="29" />
+          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/event/UserRegistrationEventListener.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/event/UserRegistrationEventListener.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/JwtAuthConverter.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -233,5 +238,10 @@
         <PinnedItemInfo parentTag="org.jboss.resteasy.specimpl.AbstractBuiltResponse$InputStreamWrapper" memberName="in" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((Collections.UnmodifiableMap)jwt.claims).entrySet().toArray()[5]" custom="java.util.Collections.UnmodifiableMap" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

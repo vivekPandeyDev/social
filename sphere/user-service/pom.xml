@@ -8,7 +8,6 @@
         <artifactId>sphere</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <artifactId>user-service</artifactId>
 
     <properties>
@@ -24,7 +23,6 @@
             <artifactId>keycloak-admin-client</artifactId>
             <version>${keycloak.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
