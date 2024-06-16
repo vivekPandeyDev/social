@@ -79,3 +79,5 @@ Vsphere/user-service/src/main/java/com/media/social/user/dto/KeyCloakCredentialD
 [sphere/user-service/src/main/java/com/media/social/user/webconfig/FileUploadProperties.java,1\7\174ad73e15786309cbdf34c9791554656090778b
 „
 Tsphere/user-service/src/main/java/com/media/social/user/app/KeyCloakServiceImpl.java,c\d\cd87751084613367a7c9db94a2b92ad01d8ecd09
+y
+Isphere/user-service/src/main/java/com/media/social/user/dto/LoginDto.java,d\d\ddb7c761a71590e3b8cd4069d059686ee34ebeed

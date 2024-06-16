@@ -52,15 +52,6 @@ public class RegisterDto {
         userRepresentation.setEmailVerified(this.emailVerified);
         var defaultCredential = Stream.of(new KeyCloakCredentialDto(this.password).toCredentialRepresentation()).toList();
         userRepresentation.setCredentials(defaultCredential);
-
-        Map<String, List<String>> attributes = new HashMap<>();
-        if (this.profileUrl != null) {
-            attributes.put("profileUrl", Collections.singletonList(this.profileUrl));
-        }
-        if (this.bio != null) {
-            attributes.put("bio", Collections.singletonList(this.bio));
-        }
-        userRepresentation.setAttributes(attributes);
         return userRepresentation;
     }
 
