@@ -5,13 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ae727fb-ca59-425a-b0fe-94ba84617ba0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/keycloak/UserRegisterEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/social.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/social.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/003d0cab2c72116e6dc5ebdc9fa4cee9111f11c9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/003d0cab2c72116e6dc5ebdc9fa4cee9111f11c9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/3758c7f279782029bca3fc45c0b6bbda27eabff0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/a/3ab5a05c1cb53c3a9839a9bc0e0060e211b7ddd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e695c12a84be5c031aed4ba7580866d6a2de2f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/5/75e695c12a84be5c031aed4ba7580866d6a2de2f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a63ce24d7e94583277c008fc522495e4225eca33" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a63ce24d7e94583277c008fc522495e4225eca33" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cd87751084613367a7c9db94a2b92ad01d8ecd09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7bee192adb11e64c76198fc87d3d1a93012bb2d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/7/3758c7f279782029bca3fc45c0b6bbda27eabff0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/a/3ab5a05c1cb53c3a9839a9bc0e0060e211b7ddd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/d/cd87751084613367a7c9db94a2b92ad01d8ecd09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/7/f7bee192adb11e64c76198fc87d3d1a93012bb2d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/social.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/social.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/KeyCloakUserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/social.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/social.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/keycloak/KeyCloakService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/keycloak/KeyCloakServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/UserUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/keycloak/UserUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/RegisterDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/dto/RegisterDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/exception/GlobalExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/exception/GlobalExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/file/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/file/ImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sphere/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sphere/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +216,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/app/KeyCloakServiceImpl.java</url>
+          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/keycloak/KeyCloakServiceImpl.java</url>
           <line>37</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
@@ -215,6 +239,11 @@
           <url>file://$PROJECT_DIR$/sphere/gateway-service/src/main/java/com/media/social/gateway/security/JwtAuthConverter.java</url>
           <line>36</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sphere/user-service/src/main/java/com/media/social/user/keycloak/UserRegisterEvent.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -11,6 +11,11 @@ server:
   port: 8081
 
 spring:
+  #  kafka consumer
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: oauth-user-group-1
   #       form data enable
   servlet:
     multipart:

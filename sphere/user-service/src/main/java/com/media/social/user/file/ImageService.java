@@ -1,5 +1,6 @@
 package com.media.social.user.file;
 
+import com.media.social.user.exception.ServiceException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -33,7 +34,7 @@ public class ImageService implements FileService {
                 log.info("Directory created: " + newDir.getAbsolutePath());
             } else {
                 log.info("Failed to create directory: " + newDir.getAbsolutePath());
-
+                throw new ServiceException("Cannot create file dir: {}",currentDir);
             }
         }
 

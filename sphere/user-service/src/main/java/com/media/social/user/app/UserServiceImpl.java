@@ -4,6 +4,7 @@ import com.media.social.user.dto.Operation;
 import com.media.social.user.dto.RegisterDto;
 import com.media.social.user.dto.UserDto;
 import com.media.social.user.exception.ServiceException;
+import com.media.social.user.keycloak.KeyCloakService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;

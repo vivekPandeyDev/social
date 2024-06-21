@@ -1,4 +1,4 @@
-package com.media.social.user.app;
+package com.media.social.user.keycloak;
 
 import com.media.social.user.dto.RegisterDto;
 import com.media.social.user.exception.ServiceException;
@@ -54,6 +54,8 @@ public class KeyCloakServiceImpl implements KeyCloakService {
         }
 
     }
+
+
     public UserRepresentation getKeycloakUser(String username) {
         var users = realmResource.users().search(username);
         if (users.isEmpty()) {

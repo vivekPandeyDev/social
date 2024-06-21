@@ -1,4 +1,4 @@
-package com.media.social.user.app;
+package com.media.social.user.keycloak;
 
 import com.media.social.user.dto.RegisterDto;
 import org.keycloak.representations.idm.RoleRepresentation;

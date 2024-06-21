@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.mapping.PropertyReferenceException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -49,17 +50,18 @@ public class GlobalExceptionAdvice {
     }
 
     @ExceptionHandler(ServiceException.class)
-    ProblemDetail handleMovieNotProblemDetail(ServiceException ex, HttpServletRequest request) {
+    ResponseEntity<ProblemDetail> handleMovieNotProblemDetail(ServiceException ex, HttpServletRequest request) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(ex.getStatus());
         problemDetail.setTitle(ex.getTitle());
         problemDetail.setType(
                 ServletUriComponentsBuilder.fromRequestUri(request).replacePath(null).path("error").build().toUri());
         problemDetail.setProperties(Map.of(MESSAGE, ex.getMessage()));
         logMessage(ex.getMessage());
-        return problemDetail;
+        return ResponseEntity.status(ex.getStatus().value()).body(problemDetail);
     }
 
     @ExceptionHandler(NotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
     ProblemDetail handleResourceNotFound(NotFoundException ex, HttpServletRequest request) {
         ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.NOT_FOUND);
         problemDetail.setTitle("CANNOT FIND RESOURCE");
@@ -70,16 +72,17 @@ public class GlobalExceptionAdvice {
         return problemDetail;
     }
 
-//    @ExceptionHandler(Exception.class)
-//    ProblemDetail generalException(Exception ex, HttpServletRequest request) {
-//        ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.INTERNAL_SERVER_ERROR);
-//        problemDetail.setTitle("Oops!!!! Something went wrong");
-//        problemDetail.setType(
-//                ServletUriComponentsBuilder.fromRequestUri(request).replacePath(null).path("error").build().toUri());
-//        problemDetail.setProperties(Map.of(MESSAGE, ex.getMessage()));
-//        logMessage(ex.getMessage());
-//        return problemDetail;
-//    }
+    @ExceptionHandler(Exception.class)
+    @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
+    ProblemDetail generalException(Exception ex, HttpServletRequest request) {
+        ProblemDetail problemDetail = ProblemDetail.forStatus(HttpStatus.INTERNAL_SERVER_ERROR);
+        problemDetail.setTitle("Oops!!!! Something went wrong.");
+        problemDetail.setType(
+                ServletUriComponentsBuilder.fromRequestUri(request).replacePath(null).path("error").build().toUri());
+        problemDetail.setProperties(Map.of(MESSAGE, ex.getMessage()));
+        logMessage(ex.getMessage());
+        return problemDetail;
+    }
 
     private String extractPropertyName(PropertyReferenceException ex) {
         String message = ex.getMessage();

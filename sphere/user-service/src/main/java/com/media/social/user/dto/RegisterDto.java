@@ -1,15 +1,11 @@
 package com.media.social.user.dto;
 
-import com.media.social.user.app.User;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import lombok.Data;
 import org.keycloak.representations.idm.UserRepresentation;
-import org.modelmapper.ModelMapper;
 
-import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @Data
@@ -54,6 +50,8 @@ public class RegisterDto {
         userRepresentation.setCredentials(defaultCredential);
         return userRepresentation;
     }
+
+
 
 
 

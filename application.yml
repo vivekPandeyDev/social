@@ -1,6 +1,11 @@
 # actuator info
 management:
+  tracing:
+    sampling:
+      probability: 1.0
   endpoints:
+    health:
+      show-details: always
     web:
       exposure:
         include: '*'

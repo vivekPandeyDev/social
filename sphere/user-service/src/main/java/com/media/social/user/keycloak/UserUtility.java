@@ -1,30 +1,19 @@
-package com.media.social.user.app;
+package com.media.social.user.keycloak;
 
 import com.media.social.user.dto.UserDto;
-import lombok.RequiredArgsConstructor;
+import org.keycloak.representations.idm.RoleRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
-import org.springframework.stereotype.Component;
 
+import java.time.Instant;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.time.ZoneId;
+import java.util.*;
 
-@Component
-@RequiredArgsConstructor
+
 public class UserUtility {
 
-    private final UserService userService;
-    public UUID getUUIDFromUniqueName(String uniqueName){
-        return userService.getUserByUsername(uniqueName).getUserId();
+    private UserUtility() {
     }
-
-    public String getUserNameFromToken(String token){
-        // rest call to get userName;
-        return "admin_";
-    }
-
 
     public static UserDto toUserDto(UserRepresentation userRep) {
         UserDto userDto = new UserDto();
@@ -37,7 +26,10 @@ public class UserUtility {
         userDto.setEmailVerified(userRep.isEmailVerified());
 
         if (userRep.getCreatedTimestamp() != null) {
-            userDto.setCreatedAt(LocalDate.ofEpochDay(userRep.getCreatedTimestamp()));
+            LocalDate localDate = Instant.ofEpochMilli(userRep.getCreatedTimestamp())
+                    .atZone(ZoneId.systemDefault())
+                    .toLocalDate();
+            userDto.setCreatedAt(localDate);
         }
 
         List<String> roles = new ArrayList<>();
@@ -51,12 +43,14 @@ public class UserUtility {
 
         Map<String, List<String>> attributes = userRep.getAttributes();
         if (attributes != null) {
-            userDto.setProfileUrl(getAttribute(attributes, "profileUrl"));
-            userDto.setBio(getAttribute(attributes, "bio"));
-            userDto.setFollowers(getUUIDListAttribute(attributes, "followers"));
-            userDto.setFollowings(getUUIDListAttribute(attributes, "followings"));
+            userDto.setProfileUrl(getAttribute(attributes, "picture"));
         }
 
+        return userDto;
+    }
+
+    public static UserDto setDefaultRoles(UserDto userDto, RoleRepresentation role){
+        userDto.setRoles(Collections.singletonList(role.getName()));
         return userDto;
     }
 
@@ -65,14 +59,4 @@ public class UserUtility {
         return (values != null && !values.isEmpty()) ? values.get(0) : null;
     }
 
-    private static List<UUID> getUUIDListAttribute(Map<String, List<String>> attributes, String key) {
-        List<String> values = attributes.get(key);
-        List<UUID> uuidList = new ArrayList<>();
-        if (values != null) {
-            for (String value : values) {
-                uuidList.add(UUID.fromString(value));
-            }
-        }
-        return uuidList;
-    }
 }

@@ -2,7 +2,18 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/2/2" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/6/5" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/6/6" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/d/6" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/issuestore/e/e" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/2/2" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/6/5" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/6/6" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/d/6" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore/e/e" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
