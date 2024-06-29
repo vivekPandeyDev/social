@@ -1,0 +1,3 @@
+com\vivek\events\config\KafkaProducerConfig.class
+com\vivek\events\UserEventListenerProviderFactory.class
+com\vivek\events\UserRegisterEventListenerProvider.class
